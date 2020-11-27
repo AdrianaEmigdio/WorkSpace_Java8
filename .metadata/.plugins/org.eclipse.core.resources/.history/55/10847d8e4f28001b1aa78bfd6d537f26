@@ -1,0 +1,46 @@
+package Cartao;
+
+public class CartaoCashBack extends CartaoPrePago {
+
+	private int tipo ;
+
+	public CartaoCashBack(String numeroCartao, String nomeTitular, int anoValidade, int mesValidade, double saldo,
+			int tipo) {
+		super(numeroCartao, nomeTitular, anoValidade, mesValidade, saldo);
+		this.tipo = tipo;
+	}
+
+	public int getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(int tipo) {
+		this.tipo = tipo;
+	}
+	
+	public boolean comprar (double valor) {
+		if (valor <= saldo) {
+			saldo = saldo - valor;
+			if (tipo == 1) {
+				valor = valor*0.08;
+				saldo = saldo + valor; 
+			}
+			
+			else if (tipo == 2 ) {
+				valor = valor*0.05;
+				saldo = saldo + valor;
+			}
+			else if (tipo == 3 ) {
+				valor = valor*0.03;
+				saldo = saldo + valor;
+			}
+					
+		return true ;
+		}
+		else {
+		return false;
+		}
+	}
+	
+	
+}

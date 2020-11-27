@@ -1,0 +1,24 @@
+
+public class Principal {
+	public static void main(String[] args) {
+		
+	// declarei uma variavel do tipo Produto e chamei de p 	
+		Produto p;
+	// o que faz o opoerador NEW?
+	// basicamente ele cria a area de memoria correspondente a estrutura do tipo de produto	
+	
+	p = new Produto();
+	
+	// vamos preencher o produto com valores ?
+	p.codigo = 123;
+	p.nome = "Bolsa Luis Vintao";
+	p.preco = 29.90;
+	p.categoria = "Acessorios";
+	p.qtde = 10;
+	
+	System.out.println("Produto "+p.codigo+" - "+p.nome);  
+	System.out.println("Categoria "+p.categoria);  
+	System.out.println("Preco R$ "+p.preco +  " Quant. Estoque: "+p.qtde);  
+
+	}
+}

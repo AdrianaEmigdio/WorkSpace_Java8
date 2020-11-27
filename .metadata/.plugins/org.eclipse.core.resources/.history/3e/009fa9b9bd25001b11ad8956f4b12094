@@ -1,0 +1,17 @@
+
+public class EmpregadoTeste {
+
+	public stativ void main(String[] args) {
+		Empregado e1, e2, e3;
+		
+		e1 = new Empregado ();
+		e1 = new Empregado ();
+		e1 = new Empregado ();
+		
+
+	}
+
+
+
+
+}

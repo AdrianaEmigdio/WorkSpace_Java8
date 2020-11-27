@@ -1,0 +1,15 @@
+package model;
+
+	/*
+	 *  quando defino a Interface, no fundo temos o seguinte:
+	 *  uma classe abstrata composta APENAS de métodos abstratos
+	 *  
+	 *  estes métodos refletem novamente o conjunto de "cláusulas contratuais"
+	 */
+	
+	public interface InterfaceBD {
+		public void conectar(String nomeBanco, String usuario);
+		public void desconectar(String nomeBanco);
+		public void executar(String comando);
+
+}

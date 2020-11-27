@@ -1,0 +1,33 @@
+
+public class EmpregadoTeste {
+
+	public static void main(String[] args) {
+		Empregado e1, e2, e3;
+		
+		e1 = new Empregado ();
+		e1 = new Empregado ();
+		e1 = new Empregado ();
+		
+		e1.setNome("Professor Isidro");
+		e1.setCargo("Professor");
+		e1.setSalario("25000.00");
+		
+		e1.setNome("Adalberto Moreira");
+		e1.setCargo("Coordenador");
+		e1.setSalario("12814.00");
+		
+		e1.setNome("Claudineia Tavares");
+		e1.setCargo("Diretora");
+		e1.setSalario("32987.12");
+		
+		System.out.println(e1.imprimir()};
+		System.out.println(e2.imprimir()};
+		System.out.println(e3.imprimir()};
+		
+		
+	}
+}
+
+
+
+}

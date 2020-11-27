@@ -1,0 +1,73 @@
+package core;
+
+
+public class ContaBase{
+	protected String nomeTitular;
+	protected String cpf;
+	protected int numeroConta;
+	protected float saldo;
+	protected float debitar;
+	protected float creditar;
+
+	public ContaBase(String nomeTitular, String cpf, int numeroConta, float saldo) {
+		super();
+		this.nomeTitular = nomeTitular;
+		this.cpf = cpf;
+		this.numeroConta = numeroConta;
+		this.saldo = saldo;
+	}
+
+	public void creditar(float valor) {
+		saldo = saldo + valor;
+		// ou seja, somo ao saldo o valor passado como parâmetro
+	}
+
+	public boolean debitar(float valor) {
+		if (valor <= this.saldo) { // tenho saldo suficiente
+			this.saldo = this.saldo - valor;
+			return true; // indicando que o saque foi autorizado
+		} else {
+			return false; // retornar false indica que o saque não foi autorizado
+		}
+	}
+
+	
+	@Override
+	public String toString() {
+		return "ContaBase [numeroConta=" + numeroConta + ", saldo=" + saldo + ", debitar=" + debitar + ", creditar="
+				+ creditar + "]";
+	}
+
+	public string getNomeTitular() {
+		return nomeTitular;
+	}
+
+	public void setNomeTitular(string nomeTitular) {
+		this.nomeTitular = nomeTitular;
+	}
+
+	public string getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(string cpf) {
+		this.cpf = cpf;
+	}
+
+	public int getNumeroConta() {
+		return numeroConta;
+	}
+
+	public void setNumeroConta(int numeroConta) {
+		this.numeroConta = numeroConta;
+	}
+
+	public float getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(float saldo) {
+		this.saldo = saldo;
+	}
+
+}

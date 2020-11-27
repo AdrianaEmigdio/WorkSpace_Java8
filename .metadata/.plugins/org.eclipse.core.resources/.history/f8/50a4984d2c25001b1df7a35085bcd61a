@@ -1,0 +1,14 @@
+
+public class IsiItau {
+
+	Scanner teclado = new Scanner(System.in);
+	ContaBancaria cb;
+	cb = new ContaBancaria ();
+	
+// preencher como se estivesse recuperando dados de um BD
+	
+	cb.numeroConta = 12321;
+	cb.nomeTitular
+
+
+}

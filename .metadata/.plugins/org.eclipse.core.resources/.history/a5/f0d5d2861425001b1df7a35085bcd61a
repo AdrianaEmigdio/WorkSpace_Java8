@@ -1,0 +1,11 @@
+/* aqui estamos  definindo a classe Produto 
+ * classe para nós, significa" novo tipo de dado " 
+ * esse tipo em especial vai armazenar 
+ */
+public class Produto {
+	int codigo;
+	String nome;
+	double preco;
+	int qtde;
+	String categoria;
+}

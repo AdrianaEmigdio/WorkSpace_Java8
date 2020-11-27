@@ -1,0 +1,22 @@
+package core;
+
+public class ContaEspecial extends ContaBase{
+
+	private float  limite;
+
+	public ContaEspecial(string nomeTitular, string cpf, int numeroConta, float saldo, float limite) {
+		super(nomeTitular, cpf, numeroConta, saldo);
+		this.limite = limite;
+	}
+
+	public float getLimite() {
+		return limite;
+	}
+
+	public void setLimite(float limite) {
+		this.limite = limite;
+	}
+	
+	
+	
+}

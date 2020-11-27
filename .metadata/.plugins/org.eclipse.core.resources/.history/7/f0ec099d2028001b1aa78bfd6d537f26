@@ -1,0 +1,23 @@
+package Principal;
+
+import core.ContaBase;
+
+
+public class ClassePrincipal {
+
+
+	public static void main(String[] args) {
+	
+		ContaBase Bc = new ContaBase("Roberto Setubal","123456789", 55554, 100000.50f);
+		Bc.Creditar (300.00f);
+		System.out.println(Bc);
+	
+		if (Bc.debitar(200.00f)) {
+		System.out.println("Debito Efetuado");
+		System.out.println(Bc);
+		}
+		else {	
+		System.out.println("Debito Autorizado");
+		}
+	}
+}

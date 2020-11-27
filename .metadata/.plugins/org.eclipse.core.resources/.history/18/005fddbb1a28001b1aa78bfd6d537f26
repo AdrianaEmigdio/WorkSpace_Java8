@@ -1,0 +1,15 @@
+//package Principal;
+
+//import core.ContaBase;
+
+
+public class ClassePrincipal {
+
+
+	public static void main(String[] args) {
+	
+	ContaBase Bc = new ContaBase("Roberto Setubal","123456789", 55554, 100000.50f)
+
+		System.out.println(Bc);
+	}
+}

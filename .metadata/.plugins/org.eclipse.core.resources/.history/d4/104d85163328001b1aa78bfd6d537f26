@@ -1,0 +1,30 @@
+package Principal;
+
+import core.ContaBase;
+import core.ContaEspecial;
+//import java.util.Scanner;
+
+public class ClassePrincipal {
+
+	public static void main(String[] args) {
+		
+		
+		ContaBase Bc = new ContaBase("Roberto Setubal","123456789",55554, 100000.0f);
+		Bc.Creditar (300.00f);
+		System.out.println(Bc);
+	
+		if (Bc.debitar(200.00f)) {
+		System.out.println("Debito Efetuado");
+		System.out.println(Bc);
+		}
+		else {	
+		System.out.println("Debito Autorizado");
+		}
+		
+		ContaEspecial ce = new Contaespecial ("Maria Paz", "123456789", 12345, 500.0f,300.0f);"
+				System.out.println(ce);
+		if (ce.debitar(700.0f)) {
+			System.out.println();
+		}
+	}
+}

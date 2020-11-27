@@ -1,0 +1,31 @@
+package Provas;
+
+public class QuestaoDica extends QuestaoSimples {
+	private String dica ;
+
+	public QuestaoDica(String enunciado, String resposta) {
+		super(enunciado, resposta);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	
+	public String getDica() {
+		return dica;
+	}
+
+	public void setDica(String dica) {
+		this.dica = dica;
+	}
+
+
+	@Override
+	public String toString() {
+		return "QuestaoDica [dica=" + dica + ", enunciado=" + enunciado + ", resposta=" + resposta + ", getEnunciado()="
+				+ getEnunciado() + ", getResposta()=" + getResposta() + ", getClass()=" + getClass() + ", hashCode()="
+				+ hashCode() + ", toString()=" + super.toString() + "]";
+	}
+
+	
+	
+}

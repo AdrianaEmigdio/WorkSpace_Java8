@@ -1,0 +1,31 @@
+package userinterface;
+
+public class Concessionaria extends Veiculo {
+	private String tipo;
+
+	public Concessionaria(String marca, String placa, String tipo) {
+		super(marca, placa);
+		this.tipo = tipo;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+
+	public void acelerar() {
+		System.out.println("Moto "+super.marca+" acelera na mão PROPROPROPRORPORPRO");
+	}
+
+	
+	public void frear() {
+		System.out.println("Moto "+super.marca+" freia no pé! VZZZZZAIIDFIASFDAVAds");
+	}
+	
+	
+
+}

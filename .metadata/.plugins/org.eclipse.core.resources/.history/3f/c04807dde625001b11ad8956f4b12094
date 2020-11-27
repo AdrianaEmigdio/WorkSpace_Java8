@@ -1,0 +1,30 @@
+
+public class Biblioteca {
+public static void main(String[] args) {
+	
+	Livro l1, l2, l3 ;
+	
+	l1 = new Livro ("Java Basico", "Isidro", 2020,1,2, false);
+	l2 = new Livro ("Java Basico", "Isidro", 2020,1,2, false);
+	l3 = new Livro ("Java Basico", "Isidro", 2020,1,2, false);
+	
+	Livro = l1;
+	
+	Livro.setAutor("Professor Isidro");
+	
+	
+		
+	System.out.println(l1.imprimir());
+	System.out.println(l2.imprimir());
+	System.out.println(l3.imprimir());
+	
+	System.out.println("------------> Emprestando o Livro L1");
+	l1.emprestar();
+	System.out.println(l1.imprimir());
+	
+	
+	System.out.println("------------> Devolvendo o Livro L1");
+	l1.devolver();
+	System.out.println(l1.imprimir());
+}
+}

@@ -1,0 +1,30 @@
+package userinterface;
+
+import java.util.ArrayList;
+
+import model.Chefe;
+import model.Comissionado;
+import model.Empreiteiro;
+import model.Funcionario;
+import model.Horista;
+
+public class FolhaPagamento {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Funcionario> pagamento;
+		
+		pagamento = new ArrayList<Funcionario>();
+		
+		pagamento.add (new Chefe("Joao", "151139", 5000, 1000, 450.5f));
+		pagamento.add (new Comissionado("Marina", 3000));
+		pagamento.add (new Horista("Marina", 3000));
+		pagamento.add (new Empreiteiro("Marina", 3000));
+		
+		for (Funcionario func:pagamento) {
+			System.out.println(func.getNome()+ " R$" +func.calcularSalario());
+		}
+	
+	
+	}
+}

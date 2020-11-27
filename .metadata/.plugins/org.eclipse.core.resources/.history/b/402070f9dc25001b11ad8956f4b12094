@@ -1,0 +1,40 @@
+
+public class Livro {
+
+	public Livro(String titulo, String autor, String ano, String categoria, String  posestante, String posprateleira, boolean emprestado ) {
+		this.titulo = titulo; 
+		this.autor = autor;
+		this. ano = ano ;
+		this.categoria = categoria;
+		this.posestante = posestante;
+		this.posprateleira = prateleira;
+	}	
+		public void emprestarLivro(boolean  informacao) {
+		//	this.salario = this.salario + this.salario * percentual / 100;
+			
+		}
+		public String imprimir() {
+			String resultado;
+			resultado = "Livro :  "+this.titulo+" / "+this.autor+"/"+this.ano+"/"+this.categoria+"/"+this.posestante+"/"+this.posprateleira);
+			return resultado;
+			}
+		public String gettitulo() {
+				return nome;
+			}
+		public void setNome(String nome) {
+				this.nome = nome;
+			}
+		public String getCargo() {
+				return cargo;
+			}
+		public void setCargo(String cargo) {
+				this.cargo = cargo;
+			}
+		public double getSalario() {
+				return salario;
+			}
+		public void setSalario(double salario) {
+				this.salario = salario;
+			
+
+}
